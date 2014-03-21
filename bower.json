@@ -1,0 +1,17 @@
+{
+  "name": "jquery-passforce",
+  "version": "0.1.0",
+  "authors": [
+    "Oscar Gentilezza <oscar@gentisoft.com>"
+  ],
+  "description": "jQuery plugin for password stronger validation",
+  "main": "dist/jquery.passforce.min.js",
+  "license": "GPL2",
+  "ignore": [
+    "/examples",
+    ".git*"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0"
+  }
+}

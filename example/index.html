@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password force check</title>
+  <style type="text/css">
+    .pass-bad {
+      background-color: red;
+    }
+
+    .pass-medium {
+      background-color: yellow;
+    }
+
+    .pass-god {
+      background-color: green;
+    }
+
+  </style>
+</head>
+<body>
+
+  <form>
+    <label for="pass">Password: </label>
+    <input id="pass" type="password">
+    <div>
+      <p>Password has a score of <span class="score">0</span> (%<span class="persent">0</span>)</p>
+    </div>
+  </form> 
+
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="../dist/jquery.passforce.min.js"></script>
+  <script type="text/javascript">
+  
+    $(function () {
+        $('#pass').forcepass();
+        $('#pass').on('scorechange', function (ev, score, persent) {
+          $('.score').text(score);
+          $('.persent').text(persent);
+        });
+    });
+    
+  </script>
+</body>
+</html>
