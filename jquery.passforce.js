@@ -1,7 +1,20 @@
+(function(factory) {
 
-;(function ($) {
+  var root = (typeof self == 'object' && self.self === self && self) ||
+            (typeof global == 'object' && global.global === global && global);
 
-    if (!$) return;
+  if (typeof define === 'function' && define.amd) {
+    define(['jquery'], function($) {
+        return factory($);
+    });
+  } else if (typeof exports !== 'undefined') {
+     $ = require('jquery');
+     factory($);
+  } else {
+     factory((root.jQuery || root.Zepto || root.ender || root.$));
+  }
+
+})(function($) {
 
     var defOpts = {
         minlength: 6,
@@ -138,4 +151,6 @@
 
     });
 
-})(jQuery||null);
+    return $;
+
+});
