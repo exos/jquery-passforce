@@ -1,0 +1,37 @@
+{
+  "name": "jquery-passforce",
+  "version": "0.5.0",
+  "description": "jQuery plugin for password strength calculation",
+  "main": "jquery.passforce.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exos/jquery-passforce.git"
+  },
+  "keywords": [
+    "jquery",
+    "password",
+    "password",
+    "strenght",
+    "password",
+    "force",
+    "secure",
+    "password"
+  ],
+  "author": "exos <exos@exodica.com.ar>",
+  "license": "GPL2",
+  "bugs": {
+    "url": "https://github.com/exos/jquery-passforce/issues"
+  },
+  "homepage": "https://github.com/exos/jquery-passforce#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.2"
+  }
+}
