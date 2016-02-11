@@ -53,7 +53,7 @@
         var pass = this._el.val();
 
         if (pass.length < this._options.minlength) {
-            if (this.score != 0) this._el.trigger('scorechange', 0,0);
+            if (this.score !== 0) this._el.trigger('scorechange', 0,0);
             return 0;
         }
 
